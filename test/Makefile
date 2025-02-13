@@ -5,7 +5,10 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+
+PROJECT_SOURCES += ShiftRegister.v
+PROJECT_SOURCES += LFSR.v
+PROJECT_SOURCES += tt_um_lfsr_jsim.v
 
 ifneq ($(GATES),yes)
 
